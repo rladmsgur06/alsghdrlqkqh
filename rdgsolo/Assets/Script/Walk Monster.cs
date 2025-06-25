@@ -2,16 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hitSlime : MonoBehaviour
+public class WalkMonster : MonoBehaviour
 {
-    void OnTriggerEnter(Collider coll)
-    {
-        if (coll.gameObject.tag == "magic")
-        {
-            Destroy(gameObject);
-            Destroy(coll.gameObject);
-        }
-    }
+
+    public Transform LookatObj;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +15,8 @@ public class hitSlime : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {      
+        this.transform.Translate(new Vector3(0.0f, 0.0f, 3.0f * Time.deltaTime));
+        transform.LookAt(LookatObj);
     }
 }
