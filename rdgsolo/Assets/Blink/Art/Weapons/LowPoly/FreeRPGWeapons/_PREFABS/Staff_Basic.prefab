@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NM: {fileID: 1354871729463142532, guid: 1b369f8a03abb354c9c759ae05aaf8cb, type: 3}
+  fireTime: 1
+  firePassTime: 0
   BulletFirePos: {fileID: 135407301943127004}
 --- !u!1 &8482867372724745201
 GameObject:
