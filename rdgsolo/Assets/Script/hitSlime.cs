@@ -9,6 +9,7 @@ public class hitSlime : MonoBehaviour
         if (coll.gameObject.tag == "magic")
         {
             Destroy(gameObject);
+            Destroy(coll.gameObject);
         }
     }
 

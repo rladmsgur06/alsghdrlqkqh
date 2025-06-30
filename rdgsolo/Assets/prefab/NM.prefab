@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c14ad691141d434bbab48c43750dd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LookatObj: {fileID: 4047972025199878, guid: 928a1377c1cd4515b208fef3a396b8ea, type: 3}
 --- !u!54 &3012206461649559807
 Rigidbody:
   m_ObjectHideFlags: 0
