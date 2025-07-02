@@ -7,12 +7,15 @@ public class SlimeScript : MonoBehaviour
     public float attackCooldown = 2f;
 
     private NavMeshAgent agent;
+    private Animator anim;
     private GameObject player;
     private float lastAttackTime;
     private bool isDead = false;
+    
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
         SpawnAtRandomOutside();
@@ -27,6 +30,7 @@ public class SlimeScript : MonoBehaviour
 
         if (distance <= detectionRange && Time.time - lastAttackTime > attackCooldown)
         {
+            anim.SetTrigger("attack");
             player.GetComponent<PlayerHealth>().TakeDamage(10);
             lastAttackTime = Time.time;
         }
@@ -40,6 +44,7 @@ public class SlimeScript : MonoBehaviour
 
     public void Die()
     {
+        anim.SetTrigger("die");
         isDead = true;
         Destroy(gameObject);
     }
