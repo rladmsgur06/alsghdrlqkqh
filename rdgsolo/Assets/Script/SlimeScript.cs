@@ -38,7 +38,7 @@ public class SlimeScript : MonoBehaviour
 
     void SpawnAtRandomOutside()
     {
-        Vector3 spawnPosition = new Vector3(Random.Range(-50, -30), 0, Random.Range(-50, 50));
+        Vector3 spawnPosition = new Vector3(Random.Range(-30, -18), 0, Random.Range(-30, 30));
         transform.position = spawnPosition;
     }
 

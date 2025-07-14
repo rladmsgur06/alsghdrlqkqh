@@ -5,7 +5,7 @@ using UnityEngine;
 public class WalkMonster : MonoBehaviour
 {
 
-    public Transform LookatObj;
+    public Transform player;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,6 @@ public class WalkMonster : MonoBehaviour
     void Update()
     {      
         this.transform.Translate(new Vector3(0.0f, 0.0f, 1.5f * Time.deltaTime));
-        transform.LookAt(LookatObj);
+        transform.LookAt(player);
     }
 }
