@@ -6,12 +6,13 @@ public class rhdrurthreh : MonoBehaviour
 {
     private float bulletSpeed = 500.0f;
     private Transform thisTransform;
-    private GameObject monster;
+    /*private GameObject monster;*/
+
 
     // Start is called before the first frame update
     void Start()
     {
-        monster = GameObject.FindWithTag("monster");
+        /*monster = GameObject.FindWithTag("Monster");*/
         thisTransform = GetComponent<Transform>();
         FireBullet();
     }
