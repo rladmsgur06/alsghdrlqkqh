@@ -5,7 +5,7 @@ using UnityEngine;
 public class rhdrurthreh : MonoBehaviour
 {
     public float bulletSpeed = 500.0f;
-    public float rotateSpeed = 5.0f; // 회전 속도
+    public float rotateSpeed = 500.0f; // 회전 속도
     private Transform target;
 
     private Rigidbody rb;

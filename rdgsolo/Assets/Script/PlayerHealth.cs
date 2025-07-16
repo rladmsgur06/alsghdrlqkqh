@@ -17,8 +17,25 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        Debug.Log("Damage "+damage+ " taken");
-        Debug.Log("HP" + PlayerHP);
+        //Debug.Log("Damage "+damage+ " taken");
         PlayerHP = PlayerHP - damage;
+        Debug.Log("HP" + PlayerHP);       
+    }
+
+    void OnTriggerEnter(Collider coll)
+    {
+        if (coll.gameObject.tag == "potion")
+        {
+            if (PlayerHP < 100)
+            {
+                PlayerHP += 10;
+                Destroy(coll.gameObject);
+                Debug.Log("HP" + PlayerHP);
+            }
+            else
+            {
+                Destroy(coll.gameObject);
+            }
+        }
     }
 }
