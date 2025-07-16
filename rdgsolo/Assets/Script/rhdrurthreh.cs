@@ -4,28 +4,34 @@ using UnityEngine;
 
 public class rhdrurthreh : MonoBehaviour
 {
-    private float bulletSpeed = 500.0f;
-    private Transform thisTransform;
-    /*private GameObject monster;*/
+    public float bulletSpeed = 500.0f;
+    public float rotateSpeed = 5.0f; // 회전 속도
+    private Transform target;
 
+    private Rigidbody rb;
 
-    // Start is called before the first frame update
     void Start()
     {
-        /*monster = GameObject.FindWithTag("Monster");*/
-        thisTransform = GetComponent<Transform>();
-        FireBullet();
+        target = GameObject.FindWithTag("monster")?.transform;
+        //몬스터 태그(표적) 찾기
+
+        rb = GetComponent<Rigidbody>();
+
+        rb.AddForce(transform.forward * bulletSpeed);
+        //맨 처음 발사되는 힘
     }
 
-    void FireBullet()
+    void FixedUpdate()
     {
-        GetComponent<Rigidbody>().AddForce(thisTransform.forward * bulletSpeed);
-    }
+        if (target == null) return;
 
+        Vector3 direction = (target.position - transform.position).normalized;
+        //목표 방향 벡터(목표 - 현위치)
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Quaternion lookRotation = Quaternion.LookRotation(direction);
+        rb.MoveRotation(Quaternion.Slerp(rb.rotation, lookRotation, rotateSpeed * Time.fixedDeltaTime));
+        //회전설정
+
+        rb.velocity = transform.forward * (rb.velocity.magnitude); // 방향만 조정, 속도는 유지
     }
 }
