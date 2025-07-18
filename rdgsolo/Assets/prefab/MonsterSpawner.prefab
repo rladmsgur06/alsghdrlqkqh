@@ -50,5 +50,5 @@ MonoBehaviour:
   spawnInterval: 1
   maxSpawnCount: 100
   spawnRadius: 20
-  spawnDistanceFromEdge: 10
+  spawnDistanceFromEdge: 2
   mapCenter: {x: 0, y: 0, z: 0}
