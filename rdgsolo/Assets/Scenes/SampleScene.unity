@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 46
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: a749486b1c4f5bf4c8eec70e9a70d548, type: 2}
 --- !u!1 &1345913
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.83
@@ -890,6 +894,10 @@ PrefabInstance:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1239,6 +1247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: turtleV2
       objectReference: {fileID: 0}
+    - target: {fileID: 9172937900069396181, guid: 2d0ab98a8d7719c49842e21c9e3be077, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1258,6 +1270,10 @@ PrefabInstance:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1319,6 +1335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.66
@@ -1378,6 +1398,10 @@ PrefabInstance:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1501,6 +1525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.83
@@ -1617,6 +1645,10 @@ PrefabInstance:
     - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
@@ -1808,6 +1840,10 @@ PrefabInstance:
     - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
@@ -2026,6 +2062,10 @@ PrefabInstance:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2651,6 +2691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.84
@@ -2715,6 +2759,10 @@ PrefabInstance:
     - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
@@ -2792,6 +2840,10 @@ PrefabInstance:
     - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
@@ -3423,6 +3475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3540,6 +3596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vThirdPersonCamera_LITE
       objectReference: {fileID: 0}
+    - target: {fileID: 2700874171910072504, guid: 330efb0e9eed825408809c121441b8a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2700874171910072505, guid: 330efb0e9eed825408809c121441b8a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.086567
@@ -3632,6 +3692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3708,6 +3772,10 @@ PrefabInstance:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4191,7 +4259,6 @@ Transform:
   m_Children:
   - {fileID: 251702213}
   - {fileID: 1185892023}
-  - {fileID: 638933327}
   - {fileID: 581993463}
   - {fileID: 786653262}
   - {fileID: 2137443906}
@@ -4634,6 +4701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.66
@@ -4883,6 +4954,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4388997623891732, guid: a47d7ad739a48614babdcba6106ead5f, type: 3}
   m_PrefabInstance: {fileID: 1721371382}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1166226839
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5689915144251393886, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: spawnRadius
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044121246706168634, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107106140152384031, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      propertyPath: m_Name
+      value: MonsterSpawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
 --- !u!1 &1185892022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
@@ -5205,6 +5337,10 @@ PrefabInstance:
     - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
@@ -5536,7 +5672,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &1390150358
 MeshCollider:
@@ -6443,6 +6579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.66
@@ -6560,6 +6700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.83
@@ -6602,7 +6746,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 638933327}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       insertIndex: -1
@@ -6799,6 +6946,10 @@ PrefabInstance:
     - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
@@ -7698,6 +7849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.83
@@ -7871,6 +8026,10 @@ PrefabInstance:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8095,6 +8254,10 @@ PrefabInstance:
     - target: {fileID: 5973651438739535906, guid: 63af6c87a8ecde943a40b2d380e11c6b, type: 3}
       propertyPath: m_Name
       value: slimeV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5973651438739535906, guid: 63af6c87a8ecde943a40b2d380e11c6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8365,6 +8528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor_Grass_v1_2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1457229982921344, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4179565050224946, guid: a2fbc4036fe0e9f40899ea784ee93073, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8473,15 +8640,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 973497129}
+    m_TransformParent: {fileID: 1185892023}
     m_Modifications:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.83
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8489,7 +8660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.84
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8497,7 +8668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8751,6 +8922,10 @@ PrefabInstance:
     - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_Name
       value: Floor_Grass_v1_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601105362641560, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4557539474977832, guid: 4e43cdca195a1664d966791f28202d31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9553,3 +9728,4 @@ SceneRoots:
   - {fileID: 1842109314}
   - {fileID: 784780359}
   - {fileID: 272987207}
+  - {fileID: 1166226839}
