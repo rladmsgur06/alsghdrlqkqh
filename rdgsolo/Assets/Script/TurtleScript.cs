@@ -18,7 +18,7 @@ public class TurtleScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
         currentHealth = maxHealth;
-        SpawnAtRandomOutside();
+        //SpawnAtRandomOutside();
     }
 
     void Update()
@@ -35,11 +35,13 @@ public class TurtleScript : MonoBehaviour
         }
     }
 
+    /*
     void SpawnAtRandomOutside()
     {
         Vector3 spawnPosition = new Vector3(Random.Range(-30, -18), 0, Random.Range(-30, 30));
         transform.position = spawnPosition;
     }
+    */
 
     public void GetHit()
     {

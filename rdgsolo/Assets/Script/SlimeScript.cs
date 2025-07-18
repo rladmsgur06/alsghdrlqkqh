@@ -18,7 +18,7 @@ public class SlimeScript : MonoBehaviour
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
-        SpawnAtRandomOutside();
+        //SpawnAtRandomOutside();
     }
 
     void Update()
@@ -35,13 +35,13 @@ public class SlimeScript : MonoBehaviour
             lastAttackTime = Time.time;
         }
     }
-
+    /*
     void SpawnAtRandomOutside()
     {
         Vector3 spawnPosition = new Vector3(Random.Range(-30, -18), 0, Random.Range(-30, 30));
         transform.position = spawnPosition;
     }
-
+    */
     public void Die()
     {
         anim.SetTrigger("die");
