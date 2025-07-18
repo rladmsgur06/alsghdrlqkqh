@@ -19,7 +19,13 @@ public class PlayerHealth : MonoBehaviour
     {
         //Debug.Log("Damage "+damage+ " taken");
         PlayerHP = PlayerHP - damage;
-        Debug.Log("HP" + PlayerHP);       
+        Debug.Log("HP" + PlayerHP);
+
+        if (PlayerHP <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("Die");
+        }
     }
 
     void OnTriggerEnter(Collider coll)

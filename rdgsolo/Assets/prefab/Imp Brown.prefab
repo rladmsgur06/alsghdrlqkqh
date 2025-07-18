@@ -2574,6 +2574,7 @@ GameObject:
   - component: {fileID: 2550775017897747638}
   - component: {fileID: 2286271081870151866}
   - component: {fileID: -3925965693087538360}
+  - component: {fileID: 8193350969360690301}
   m_Layer: 0
   m_Name: Imp Brown
   m_TagString: monster
@@ -2663,6 +2664,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ec713cf87d9164ca78cb6e38f30e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8193350969360690301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895248250188348940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e50bd744db07404e96c37df75bf40de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &2904760353170181263
 GameObject:
   m_ObjectHideFlags: 0
