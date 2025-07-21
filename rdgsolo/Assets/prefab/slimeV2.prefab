@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 5
-  attackCooldown: 2
+  attackCooldown: 5
 --- !u!195 &5199602617253636429
 NavMeshAgent:
   m_ObjectHideFlags: 0

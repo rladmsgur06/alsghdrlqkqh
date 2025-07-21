@@ -4883,7 +4883,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9107106140152384031, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1270634751}
   m_SourcePrefab: {fileID: 100100000, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
 --- !u!1 &1185892022 stripped
 GameObject:
@@ -5238,6 +5241,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 5.20688, z: 0.83}
   m_Center: {x: -0.00000011920929, y: 2.5841138, z: -0.00000023841858}
+--- !u!1 &1270634748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107106140152384031, guid: 7de4fe7074885794e93a2b98adacdc6e, type: 3}
+  m_PrefabInstance: {fileID: 1166226839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1270634751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270634748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1861471fca62d9a4395d4bc1ef921080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Potion: {fileID: 4000010690109084, guid: 7cafb89b5a0f61f479d0a748962abbbc, type: 3}
+  potionTime: 10
+  potionPassTime: 0
 --- !u!1 &1298863433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1483114160548464, guid: a47d7ad739a48614babdcba6106ead5f, type: 3}
@@ -5990,6 +6013,10 @@ PrefabInstance:
     - target: {fileID: 135407301943127004, guid: 0d0ae09fa98635e4e8435fc1a1fc72c7, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445409364063694790, guid: 0d0ae09fa98635e4e8435fc1a1fc72c7, type: 3}
+      propertyPath: fireTime
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 1445409364063694790, guid: 0d0ae09fa98635e4e8435fc1a1fc72c7, type: 3}
       propertyPath: LookatObj
@@ -8620,6 +8647,14 @@ PrefabInstance:
     - target: {fileID: 4425428723088313502, guid: fc9b148a2950aaf4cba8422632222c5d, type: 3}
       propertyPath: strafeInput
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425428723088313503, guid: fc9b148a2950aaf4cba8422632222c5d, type: 3}
+      propertyPath: freeSpeed.walkSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425428723088313503, guid: fc9b148a2950aaf4cba8422632222c5d, type: 3}
+      propertyPath: freeSpeed.runningSpeed
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4425428723804510552, guid: fc9b148a2950aaf4cba8422632222c5d, type: 3}
       propertyPath: m_IsActive

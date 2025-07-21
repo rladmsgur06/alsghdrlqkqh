@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 5
-  attackCooldown: 2
+  attackCooldown: 5
   maxHealth: 2
 --- !u!195 &474104460137998058
 NavMeshAgent:

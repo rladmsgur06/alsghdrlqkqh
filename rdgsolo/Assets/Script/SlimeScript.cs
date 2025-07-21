@@ -4,7 +4,7 @@ using UnityEngine.AI;
 public class SlimeScript : MonoBehaviour
 {
     public float detectionRange = 5f;
-    public float attackCooldown = 2f;
+    public float attackCooldown = 5f;
 
     private NavMeshAgent agent;
     private Animator anim;
@@ -31,7 +31,7 @@ public class SlimeScript : MonoBehaviour
         if (distance <= detectionRange && Time.time - lastAttackTime > attackCooldown)
         {
             anim.SetTrigger("attack");
-            player.GetComponent<PlayerHealth>().TakeDamage(10);
+            player.GetComponent<PlayerHealth>().TakeDamage(3);
             lastAttackTime = Time.time;
         }
     }

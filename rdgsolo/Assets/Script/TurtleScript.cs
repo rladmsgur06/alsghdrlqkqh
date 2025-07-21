@@ -4,7 +4,7 @@ using UnityEngine.AI;
 public class TurtleScript : MonoBehaviour
 {
     public float detectionRange = 5f;
-    public float attackCooldown = 2f;
+    public float attackCooldown = 5f;
     public int maxHealth = 2;
 
     private NavMeshAgent agent;
@@ -30,7 +30,7 @@ public class TurtleScript : MonoBehaviour
 
         if (distance <= detectionRange && Time.time - lastAttackTime > attackCooldown)
         {
-            player.GetComponent<PlayerHealth>().TakeDamage(20);
+            player.GetComponent<PlayerHealth>().TakeDamage(5);
             lastAttackTime = Time.time;
         }
     }

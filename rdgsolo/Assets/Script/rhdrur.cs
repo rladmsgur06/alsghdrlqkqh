@@ -5,7 +5,7 @@ using UnityEngine;
 public class rhdrur : MonoBehaviour
 {
     public Transform NM;
-    public float fireTime = 1.0f;
+    public float fireTime = 0.5f;
     public float firePassTime = 0.0f;
     public Transform BulletFirePos;
 
