@@ -38,7 +38,7 @@ public class SpawnMonster : MonoBehaviour
 
         if (roll < 60)
             return slimePrefab;      
-        else if (roll < 90)
+        else if (roll < 100)
             return turtlePrefab;     
         else
             return impPrefab;        

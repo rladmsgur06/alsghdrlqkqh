@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    int PlayerHP = 100;
+    public int MAXHP = 100;
+    public int PlayerHP = 100;
     private float healTime = 1.0f;
     private float healPassTime = 0.0f;
+    public int autoheal = 0;
+    public int EXP = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +18,11 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHP < 100)
+        if (PlayerHP < MAXHP)
         {
             if (healPassTime >= healTime)
             {
-                PlayerHP++;
+                PlayerHP+=autoheal;
                 healPassTime = 0.0f;
             }
             else
@@ -28,9 +31,9 @@ public class PlayerHealth : MonoBehaviour
             }
             
         }
-        else if (PlayerHP > 100)
+        else if (PlayerHP > MAXHP)
         {
-            PlayerHP = 100;
+            PlayerHP = MAXHP;
         }
         
     }
@@ -51,16 +54,12 @@ public class PlayerHealth : MonoBehaviour
     {
         if (coll.gameObject.tag == "potion")
         {
-            if (PlayerHP < 100)
+            Destroy(coll.gameObject);
+            if (PlayerHP < MAXHP)
             {
-                PlayerHP += 30;
-                Destroy(coll.gameObject);
+                PlayerHP += 30;              
                 Debug.Log("HP" + PlayerHP);
-            }
-            else
-            {
-                Destroy(coll.gameObject);
-            }
+            }            
         }
     }
 }

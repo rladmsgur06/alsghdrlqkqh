@@ -17,7 +17,7 @@ public class potion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 spawnPosition = new Vector3(Random.Range(-17, 17), 0, Random.Range(17, -17));
+        Vector3 spawnPosition = new Vector3(Random.Range(-16, 16), 0, Random.Range(16, -16));
         transform.position = spawnPosition;
 
         if (potionPassTime >= potionTime)

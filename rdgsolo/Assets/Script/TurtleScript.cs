@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class TurtleScript : MonoBehaviour
 {
-    public float detectionRange = 5f;
+    public float detectionRange = 2f;
     public float attackCooldown = 5f;
     public int maxHealth = 2;
 

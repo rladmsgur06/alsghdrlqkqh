@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9bf33e56588f5d40aefdf514634d9a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 5
+  detectionRange: 2
   attackCooldown: 5
 --- !u!195 &5199602617253636429
 NavMeshAgent:

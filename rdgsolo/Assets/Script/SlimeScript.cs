@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class SlimeScript : MonoBehaviour
 {
-    public float detectionRange = 5f;
+    public float detectionRange = 2f;
     public float attackCooldown = 5f;
 
     private NavMeshAgent agent;
