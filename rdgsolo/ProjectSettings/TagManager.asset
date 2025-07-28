@@ -8,6 +8,7 @@ TagManager:
   - monster
   - Monster
   - potion
+  - plexus
   layers:
   - Default
   - TransparentFX

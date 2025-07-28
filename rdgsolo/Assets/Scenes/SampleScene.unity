@@ -9051,7 +9051,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.55
+  m_Radius: 3
   m_Height: 0
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -9120,6 +9120,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1327497476614472810, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327497476614472810, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327497476614472810, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
+      propertyPath: simulationSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327497476614472810, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
+      propertyPath: InitialModule.rotation3D
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1575651864782553621, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4567776
@@ -9160,9 +9176,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1801223382737554914, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7612263689818603371, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
       propertyPath: m_Name
       value: Plexus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7612263689818603371, guid: 38c331a55b36ad94b9e936e9d0a91e18, type: 3}
+      propertyPath: m_TagString
+      value: plexus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
