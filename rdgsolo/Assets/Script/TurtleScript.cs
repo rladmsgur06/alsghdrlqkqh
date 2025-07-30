@@ -6,6 +6,7 @@ public class TurtleScript : MonoBehaviour
     public float detectionRange = 2f;
     public float attackCooldown = 5f;
     public int maxHealth = 2;
+    private Animator anim;
 
     private NavMeshAgent agent;
     private GameObject player;
@@ -30,6 +31,8 @@ public class TurtleScript : MonoBehaviour
 
         if (distance <= detectionRange && Time.time - lastAttackTime > attackCooldown)
         {
+            anim.SetTrigger("attack");
+
             player.GetComponent<PlayerHealth>().TakeDamage(5);
             lastAttackTime = Time.time;
         }
@@ -56,7 +59,11 @@ public class TurtleScript : MonoBehaviour
 
     void Die()
     {
+        anim.SetTrigger("die");
+
         isDead = true;
+       //GameObject player = GameObject.FindWithTag("Player");
+        player?.GetComponent<PlayerHealth>()?.AddEXP(20);
         Destroy(gameObject);
     }
 
