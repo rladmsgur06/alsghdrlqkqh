@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int MAXHP = 100;
-    public int PlayerHP = 100;
+    public int MAXHP = 100;//최대체력
+    public int PlayerHP = 100;//현재체력
     private float healTime = 1.0f;
     private float healPassTime = 0.0f;
-    public int autoheal = 0;
-    public int EXP = 0;
+    public int autoheal = 0; //체력재생력
+    public int EXP = 0;//슬라임3, 터틀슬라임5, 임프20 총 50모이면 레벨업
 
     // Start is called before the first frame update
     void Start()
