@@ -78,11 +78,12 @@ public class PlayerHealth : MonoBehaviour
 
     void LevelUp()
     {
-        if (levelTxt != null)
-            levelTxt.text = $"Lv.{level}";
-
-        //Debug.Log("Level Up! 현재 레벨: " + level);
         level++;
+        if (levelTxt != null)
+            levelTxt.text = "Lv."+level;
+ 
+        //Debug.Log("Level Up! 현재 레벨: " + level);
+        
         EXP = 0;
         EXPToLevelUp += 50; // 다음 레벨업에 필요한 EXP 증가
         if (expSlider != null) expSlider.maxValue = EXPToLevelUp;

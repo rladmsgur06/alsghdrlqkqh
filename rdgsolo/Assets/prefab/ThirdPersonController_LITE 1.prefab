@@ -2597,7 +2597,6 @@ GameObject:
   - component: {fileID: 6727647534629086739}
   - component: {fileID: 4398448569611624191}
   - component: {fileID: 4383061583689057086}
-  - component: {fileID: 6556052686778981352}
   m_Layer: 0
   m_Name: ThirdPersonController_LITE 1
   m_TagString: Player
@@ -2822,20 +2821,6 @@ MonoBehaviour:
   meteorLevel: 0
   blizzardLevel: 0
   auraLevel: 0
---- !u!114 &6556052686778981352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7462833953541464261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44791b8f4d28bf04eb7659a502062f8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allUpgrades: []
-  upgradeUI: {fileID: 0}
 --- !u!1 &7613327774137829290
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class TurtleScript : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
         currentHealth = maxHealth;
@@ -69,9 +70,10 @@ public class TurtleScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PlayerAttack"))
+        if (other.CompareTag("magic"))
         {
             GetHit();
         }
+        
     }
 }
