@@ -9,6 +9,7 @@ TagManager:
   - Monster
   - potion
   - plexus
+  - Aoe
   layers:
   - Default
   - TransparentFX
