@@ -59,11 +59,9 @@ public class SlimeScript : MonoBehaviour
             Die();            
             Destroy(other.gameObject);
         }
-
-        if (other.gameObject.tag == "plexus")
+        if (other.gameObject.tag == "Aoe")
         {
-            Die();
-            Destroy(other.gameObject);
+            Die();           
         }
     }
 }
