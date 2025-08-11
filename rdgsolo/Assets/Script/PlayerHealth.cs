@@ -1,65 +1,64 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int MAXHP = 100;
-    public int PlayerHP = 100;
+    public int MAXHP = 100;//최대체력
+    public int PlayerHP = 100;//현재체력
     private float healTime = 1.0f;
     private float healPassTime = 0.0f;
-    public int autoheal = 0;
+    public int autoheal = 0; //체력재생력
+    public int autoheallv = 0;
+    public int EXP = 0;//슬라임3, 터틀슬라임5 총 50모이면 레벨업
 
-    public int EXP = 0;
-    public int EXPToLevelUp = 100;
-    public int level = 1;
-
-    // UI 연결
-    public Slider hpSlider;
-    public Slider expSlider;
-
-    public TMP_Text levelTxt;
+    // Start is called before the first frame update
     void Start()
     {
-        if (hpSlider != null) hpSlider.maxValue = MAXHP;
-        if (expSlider != null) expSlider.maxValue = EXPToLevelUp;
+
     }
 
+    // Update is called once per frame
     void Update()
-    {
-        Heal();
-        UpdateUI();
-    }
-
-    void Heal()
     {
         if (PlayerHP < MAXHP)
         {
             if (healPassTime >= healTime)
             {
-                PlayerHP += autoheal;
+                PlayerHP+=autoheal;
                 healPassTime = 0.0f;
             }
             else
             {
                 healPassTime += Time.deltaTime;
             }
+            
         }
         else if (PlayerHP > MAXHP)
         {
             PlayerHP = MAXHP;
         }
+        if (autoheallv >= 2)
+        {
+            autoheal = 1;
+        }
+        if (autoheallv >= 3)
+        {
+            autoheal = 2;
+        }
+        if (autoheallv >= 4)
+        {
+            autoheal = 3;
+        }
+        if (autoheallv >= 5)
+        {
+            autoheal = 5;
+        }
     }
-
-    void UpdateUI()
-    {
-        if (hpSlider != null) hpSlider.value = PlayerHP;
-        if (expSlider != null) expSlider.value = EXP;
-    }
-
     public void TakeDamage(int damage)
     {
-        PlayerHP -= damage;
+        //Debug.Log("Damage "+damage+ " taken");
+        PlayerHP = PlayerHP - damage;
+        Debug.Log("HP" + PlayerHP);
+
         if (PlayerHP <= 0)
         {
             Destroy(gameObject);
@@ -67,42 +66,16 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void AddEXP(int amount)
-    {
-        EXP += amount;
-        if (EXP >= EXPToLevelUp)
-        {
-            LevelUp();
-        }
-    }
-
-    void LevelUp()
-    {
-        level++;
-        if (levelTxt != null)
-            levelTxt.text = "Lv."+level;
- 
-        //Debug.Log("Level Up! 현재 레벨: " + level);
-        
-        EXP = 0;
-        EXPToLevelUp += 50; // 다음 레벨업에 필요한 EXP 증가
-        if (expSlider != null) expSlider.maxValue = EXPToLevelUp;
-
-        Debug.Log("Level Up! 현재 레벨: " + level);
-
-        // 여기서 선택지 UI 호출
-        GetComponent<PlayerLevelSystem>()?.OnLevelUp();
-    }
-
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.CompareTag("potion"))
+        if (coll.gameObject.tag == "potion")
         {
             Destroy(coll.gameObject);
             if (PlayerHP < MAXHP)
             {
-                PlayerHP += 30;
-            }
+                PlayerHP += 30;              
+                Debug.Log("HP" + PlayerHP);
+            }            
         }
     }
 }
