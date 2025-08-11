@@ -58,8 +58,7 @@ public class SlimeScript : MonoBehaviour
         }
         if (other.gameObject.tag == "Aoe")
         {
-            Die();
-            Destroy(other.gameObject);
+            Die();           
         }
     }
 }

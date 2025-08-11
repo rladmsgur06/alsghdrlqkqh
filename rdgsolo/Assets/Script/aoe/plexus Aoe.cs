@@ -9,11 +9,12 @@ public class plexusAoe : MonoBehaviour
     public float plexusaoeTime = 5.0f;
     public float plexusaoePassTime = 0.0f;
     public int plexusaoelv = 0;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-      
+        
     }
 
     // Update is called once per frame
@@ -34,22 +35,22 @@ public class plexusAoe : MonoBehaviour
             {
                 plexusaoePassTime += Time.deltaTime;
             }
-        }   
-        if (plexusaoelv >= 2)//레벨업당 쿨타임1초 감소
-        {
-            plexusaoeTime = 4.0f;
-        }
-        if (plexusaoelv >= 3)
-        {
-            plexusaoeTime = 3.0f;
-        }
-        if (plexusaoelv >= 4)
-        {
-            plexusaoeTime = 2.0f;
-        }
-        if (plexusaoelv >= 5)
-        {
-            plexusaoeTime = 1.0f;
-        }
-    }
+            if (plexusaoelv >= 2)//레벨업당 쿨타임1초 감소
+            {
+                plexusaoeTime = 4.0f;
+            }
+            if (plexusaoelv >= 3)
+            {
+                plexusaoeTime = 3.0f;
+            }
+            if (plexusaoelv >= 4)
+            {
+                plexusaoeTime = 2.0f;
+            }
+            if (plexusaoelv >= 5)
+            {
+                plexusaoeTime = 1.0f;
+            }
+        }         
+    }    
 }

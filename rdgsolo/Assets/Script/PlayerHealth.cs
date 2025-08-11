@@ -7,7 +7,8 @@ public class PlayerHealth : MonoBehaviour
     private float healTime = 1.0f;
     private float healPassTime = 0.0f;
     public int autoheal = 0; //체력재생력
-    public int EXP = 0;//슬라임3, 터틀슬라임5, 임프20 총 50모이면 레벨업
+    public int autoheallv = 0;
+    public int EXP = 0;//슬라임3, 터틀슬라임5 총 50모이면 레벨업
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +36,22 @@ public class PlayerHealth : MonoBehaviour
         {
             PlayerHP = MAXHP;
         }
-        
+        if (autoheallv >= 2)
+        {
+            autoheal = 1;
+        }
+        if (autoheallv >= 3)
+        {
+            autoheal = 2;
+        }
+        if (autoheallv >= 4)
+        {
+            autoheal = 3;
+        }
+        if (autoheallv >= 5)
+        {
+            autoheal = 5;
+        }
     }
     public void TakeDamage(int damage)
     {
