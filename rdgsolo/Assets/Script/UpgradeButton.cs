@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UpgradeButton : MonoBehaviour
 {
-    public Text nameText;
-    public Text descriptionText;
+    public TMP_Text nameText;
+    public TMP_Text descriptionText;
     public Image icon;
     public Button button;
 

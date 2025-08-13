@@ -8,7 +8,8 @@ public class PlayerLevelSystem : MonoBehaviour
 
     public void OnLevelUp()
     {
-        List<Upgrade> choices = GetRandomUpgrades(3);
+        Debug.Log("[PlayerLevelSystem]: OnLevelUp »£√‚µ ");
+        List <Upgrade> choices = GetRandomUpgrades(3);
         upgradeUI.ShowChoices(choices, ApplyUpgrade);
     }
 
