@@ -20,7 +20,7 @@ public class snowAoe : MonoBehaviour
     {
         if (snowaoelv >= 1)
         {
-            //메테오스폰
+            //얼음장판스폰
             Vector3 spawnPosition = new Vector3(Random.Range(-14, 14), 0, Random.Range(14, -14));
             transform.position = spawnPosition;
 
