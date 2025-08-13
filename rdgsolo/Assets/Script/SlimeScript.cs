@@ -5,13 +5,16 @@ public class SlimeScript : MonoBehaviour
 {
     public float detectionRange = 2f;
     public float attackCooldown = 5f;
+    public float slowEffectDuration = 5f;  // 느려지는 시간
 
     private NavMeshAgent agent;
     private Animator anim;
     private GameObject player;
     private float lastAttackTime;
     private bool isDead = false;
-    
+    private bool isSlowed = false;
+    private float normalSpeed;
+
 
     void Start()
     {
@@ -19,6 +22,7 @@ public class SlimeScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
         //SpawnAtRandomOutside();
+        normalSpeed = agent.speed;  // 원래 속도를 저장
     }
 
     void Update()
@@ -33,6 +37,10 @@ public class SlimeScript : MonoBehaviour
             anim.SetTrigger("attack");
             player.GetComponent<PlayerHealth>().TakeDamage(3);
             lastAttackTime = Time.time;
+        }
+        if (isSlowed && Time.time - lastAttackTime > slowEffectDuration)
+        {
+            RestoreSpeed();
         }
     }
     /*
@@ -60,5 +68,25 @@ public class SlimeScript : MonoBehaviour
         {
             Die();           
         }
+        if (other.gameObject.tag == "slow")  // slow 태그에 닿으면 속도 감소
+        {
+            SlowDown();
+        }
+    }
+    void SlowDown()
+    {
+        if (!isSlowed)
+        {
+            isSlowed = true;
+            agent.speed /= 2;  // 속도 절반으로 줄이기
+            lastAttackTime = Time.time;  // 느려지기 시작한 시간 기록
+        }
+    }
+
+    // 속도 원래대로 복구
+    void RestoreSpeed()
+    {
+        agent.speed = normalSpeed;
+        isSlowed = false;
     }
 }

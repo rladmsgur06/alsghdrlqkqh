@@ -8,11 +8,12 @@ public class meteorsAoe : MonoBehaviour
     public float meteorsaoeTime = 10.0f;
     public float meteorsaoePassTime = 0.0f;
     public int meteorsaoelv = 0;
+    //private GameObject monster;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //monster = GameObject.FindWithTag("monster");
     }
 
     // Update is called once per frame
@@ -21,7 +22,7 @@ public class meteorsAoe : MonoBehaviour
         if (meteorsaoelv >= 1)
         {
             //메테오스폰
-            Vector3 spawnPosition = new Vector3(Random.Range(-16, 16), 0, Random.Range(16, -16));
+            Vector3 spawnPosition = new Vector3(Random.Range(-14, 14), 0, Random.Range(14, -14));
             transform.position = spawnPosition;
 
             if (meteorsaoePassTime >= meteorsaoeTime)
@@ -33,21 +34,21 @@ public class meteorsAoe : MonoBehaviour
             {
                 meteorsaoePassTime += Time.deltaTime;
             }
-            if (meteorsaoelv >= 2)//레벨업당 쿨타임1초 감소
+            if (meteorsaoelv >= 2)//레벨업당 쿨타임 감소
             {
-                meteorsaoeTime = 8.5f; 
+                meteorsaoeTime = 9.0f; 
             }
             if (meteorsaoelv >= 3)
             {
-                meteorsaoeTime = 7.0f;
+                meteorsaoeTime = 8.0f;         
             }
             if (meteorsaoelv >= 4)
             {
-                meteorsaoeTime = 5.5f;
+                meteorsaoeTime = 7.0f;
             }
             if (meteorsaoelv >= 5)
             {
-                meteorsaoeTime = 4.0f;
+                meteorsaoeTime = 6.0f;
             }
         }
     }
