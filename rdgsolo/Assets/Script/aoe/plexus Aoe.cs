@@ -8,13 +8,13 @@ public class plexusAoe : MonoBehaviour
     public Transform plexusaoe;
     public float plexusaoeTime = 5.0f;
     public float plexusaoePassTime = 0.0f;
-    public int plexusaoelv = 0;
+    public int plexusaoelv;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //plexusaoelv = GetComponent<PlayerSkillManager>().UpgradeLightning;
     }
 
     // Update is called once per frame
