@@ -22,6 +22,7 @@ public class TurtleScript : MonoBehaviour
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindWithTag("Player");
+        Debug.Log("[TurtleScript] Player 오브젝트 찾음?" + player);
         currentHealth = maxHealth;
         //SpawnAtRandomOutside();
         normalSpeed = agent.speed;
@@ -37,7 +38,10 @@ public class TurtleScript : MonoBehaviour
         if (distance <= detectionRange && Time.time - lastAttackTime > attackCooldown)
         {
             anim.SetTrigger("attack");
-
+            Debug.Log("[TurtleScript] Update 함수-> Player 오브젝트 찾음?" + (player == null ? "NULL" : "있음"));
+            Debug.Log("[TurtleScript] PlayerHealth " +
+          (player.GetComponent<PlayerHealth>() == null ? "NULL" : "있음"));
+            //Debug.Log("[TurtleScript] PlayerHealth 찾음??" + player.GetComponent<PlayerHealth>());
             player.GetComponent<PlayerHealth>().TakeDamage(5);
             lastAttackTime = Time.time;
         }
@@ -69,7 +73,7 @@ public class TurtleScript : MonoBehaviour
     void Die()
     {
         anim.SetTrigger("die");
-        Debug.Log("turtledead");
+
         isDead = true;
        //GameObject player = GameObject.FindWithTag("Player");
         player?.GetComponent<PlayerHealth>()?.AddEXP(20);
@@ -81,7 +85,6 @@ public class TurtleScript : MonoBehaviour
         if (other.CompareTag("magic"))
         {
             GetHit();
-            Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "slow")  // slow 태그에 닿으면 속도 감소
         {
