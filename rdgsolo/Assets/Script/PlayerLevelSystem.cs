@@ -58,9 +58,9 @@ public class PlayerLevelSystem : MonoBehaviour
                 skills?.UpgradeBlizzard();
                 break;
 
-            case UpgradeType.LightningAura:
+            /*case UpgradeType.LightningAura:
                 skills?.UpgradeLightningAura();
-                break;
+                break;*/
         }
     }
 }

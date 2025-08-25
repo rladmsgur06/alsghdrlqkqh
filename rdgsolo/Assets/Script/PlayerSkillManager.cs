@@ -33,10 +33,10 @@ public class PlayerSkillManager : MonoBehaviour
         snowLevel++;
         
     } //=> snowLevel++;
-    public void UpgradeLightningAura()
+    /*public void UpgradeLightningAura()
     {
         auraLevel++;
-    } //=> auraLevel++;
+    } //=> auraLevel++;*/
 
     void Update()
     {

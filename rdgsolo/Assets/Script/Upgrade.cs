@@ -7,7 +7,7 @@ public enum UpgradeType
     Lightning,
     Meteor,
     Blizzard,
-    LightningAura
+    //LightningAura
 }
 
 [System.Serializable]
