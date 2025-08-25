@@ -69,7 +69,7 @@ public class TurtleScript : MonoBehaviour
     void Die()
     {
         anim.SetTrigger("die");
-
+        Debug.Log("turtledead");
         isDead = true;
        //GameObject player = GameObject.FindWithTag("Player");
         player?.GetComponent<PlayerHealth>()?.AddEXP(20);
@@ -81,6 +81,7 @@ public class TurtleScript : MonoBehaviour
         if (other.CompareTag("magic"))
         {
             GetHit();
+            Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "slow")  // slow 태그에 닿으면 속도 감소
         {

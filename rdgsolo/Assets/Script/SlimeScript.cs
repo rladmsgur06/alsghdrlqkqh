@@ -54,8 +54,10 @@ public class SlimeScript : MonoBehaviour
     {
         anim.SetTrigger("die");
         isDead = true;
+        Debug.Log("slimedead");
         //GameObject player = GameObject.FindWithTag("Player");
         player?.GetComponent<PlayerHealth>()?.AddEXP(20);
+        Debug.Log("EXP +20");
         Destroy(gameObject);
     }
 

@@ -39,11 +39,11 @@ public class PlayerLevelSystem : MonoBehaviour
         {
             case UpgradeType.MaxHealth:
                 stats.MAXHP += 20;
-                stats.PlayerHP = stats.MAXHP;
+                stats.PlayerHP +=20;
                 break;
 
             case UpgradeType.Regen:
-                stats.autoheal += 1;
+                stats.autoheallv += 1;
                 break;
 
             case UpgradeType.Lightning:

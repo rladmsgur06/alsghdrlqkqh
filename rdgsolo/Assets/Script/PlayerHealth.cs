@@ -56,9 +56,10 @@ public class PlayerHealth : MonoBehaviour
     {
         // 필요 시 원하는 표로 자유롭게 조정 가능
         if (autoheallv >= 5) autoheal = 5;
-        else if (autoheallv >= 4) autoheal = 3;
-        else if (autoheallv >= 3) autoheal = 2;
-        else if (autoheallv >= 2) autoheal = 1;
+        else if (autoheallv >= 4) autoheal = 4;
+        else if (autoheallv >= 3) autoheal = 3;
+        else if (autoheallv >= 2) autoheal = 2;
+        else if (autoheallv >= 1) autoheal = 1;
         else autoheal = 0;
     }
 
@@ -106,10 +107,12 @@ public class PlayerHealth : MonoBehaviour
     {
         EXP += amount;
         // 여러 번에 걸쳐 초과될 수도 있으므로 while 사용 가능
-        if (EXP >= EXPToLevelUp)
+        while (EXP >= EXPToLevelUp)
         {
+            EXP -= EXPToLevelUp;
             LevelUp();
         }
+        UpdateUI(); // 꼭 호출!
     }
 
     void LevelUp()
@@ -137,7 +140,7 @@ public class PlayerHealth : MonoBehaviour
             if (PlayerHP < MAXHP)
             {
                 PlayerHP += 30;
-                if (PlayerHP > MAXHP) PlayerHP = MAXHP;
+                //if (PlayerHP > MAXHP) PlayerHP = MAXHP;
             }
         }
     }
