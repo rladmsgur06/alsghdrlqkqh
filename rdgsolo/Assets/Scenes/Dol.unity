@@ -3406,6 +3406,14 @@ PrefabInstance:
       propertyPath: snowaoe
       value: 
       objectReference: {fileID: 534148346183847777, guid: 86bedb3ecddf3704090da67ca11a32db, type: 3}
+    - target: {fileID: 4383061583689057086, guid: 722518a86ea8c0546bddac5f4205516a, type: 3}
+      propertyPath: plexusaoe
+      value: 
+      objectReference: {fileID: 1874094136724329273, guid: a520cc8d6a0de61448bdfdce9e921400, type: 3}
+    - target: {fileID: 4383061583689057086, guid: 722518a86ea8c0546bddac5f4205516a, type: 3}
+      propertyPath: meteorsaoe
+      value: 
+      objectReference: {fileID: 4677134823920243535, guid: 6e2aac97d20f5ff49956a45e7651e892, type: 3}
     - target: {fileID: 4398448569611624191, guid: 722518a86ea8c0546bddac5f4205516a, type: 3}
       propertyPath: hpSlider
       value: 

@@ -106,12 +106,11 @@ public class PlayerSkillManager : MonoBehaviour
         if (meteorLevel >= 1)
         {
             //메테오스폰
-            Vector3 spawnPosition = new Vector3(Random.Range(-14, 14), 0, Random.Range(14, -14));
-            transform.position = spawnPosition;
+            Vector3 meteorPosition = new Vector3(Random.Range(-14, 14), 0, Random.Range(14, -14));
 
             if (meteorsaoePassTime >= meteorsaoeTime)
             {
-                Instantiate(meteorsaoe, transform.position, transform.rotation);
+                Instantiate(meteorsaoe, meteorPosition, transform.rotation);
                 meteorsaoePassTime = 0.0f;
             }
             else
