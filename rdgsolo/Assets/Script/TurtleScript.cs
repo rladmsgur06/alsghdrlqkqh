@@ -86,6 +86,10 @@ public class TurtleScript : MonoBehaviour
         {
             GetHit();
         }
+        if (other.gameObject.tag == "Aoe")
+        {
+            GetHit();
+        }
         if (other.gameObject.tag == "slow")  // slow 태그에 닿으면 속도 감소
         {
             SlowDown();
